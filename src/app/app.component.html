@@ -5,6 +5,12 @@
       <div class="row">
         <div class="col-12">
           <h5>Look up current build number for given bundle identifier</h5>
+          <div class="alert alert-danger" role="alert" *ngIf="lookup_error">
+            {{ lookup_error }}
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="lookup_success">
+            Success
+          </div>
         </div>
         <div class="col-6">
           <div class="form-group">
@@ -28,6 +34,12 @@
       <div class="row">
         <div class="col-12">
           <h5>Bump the build number for a given bundle identifier</h5>
+          <div class="alert alert-danger" role="alert" *ngIf="bump_error">
+            {{ bump_error }}
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="bump_success">
+            Success
+          </div>
         </div>
         <div class="col-6">
           <div class="form-group">
@@ -51,6 +63,12 @@
       <div class="row">
         <div class="col-12">
           <h5>Force set the build number of a given bundle identifier</h5>
+          <div class="alert alert-danger" role="alert" *ngIf="set_error">
+            {{ set_error }}
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="set_success">
+            {{ set_success }}
+          </div>
         </div>
         <div class="col-6">
           <div class="form-group">
