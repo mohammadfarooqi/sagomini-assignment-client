@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
         result => {
           this.set_error = null;
           this.set_success = result;
-          console.log(JSON.stringify(result))
+          // console.log(JSON.stringify(result))
         },
         error => {
           // console.log(<any>error)
